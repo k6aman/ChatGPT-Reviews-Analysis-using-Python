@@ -1,8 +1,123 @@
 # ChatGPT-Reviews-Analysis-using-Python
-Sentiment Analysis | NLP | Net Promoter Score
-<img width="800" height="600" alt="newplot" src="https://github.com/user-attachments/assets/e85baff7-1d67-451d-91c6-46e5e24c4569" />
-<img width="1000" height="600" alt="newplot (1)" src="https://github.com/user-attachments/assets/3090c7ce-1cc1-4ed8-8b57-b6dd79dcd75a" />
-<img width="1000" height="600" alt="newplot (2)" src="https://github.com/user-attachments/assets/6d640b64-8603-49ec-af51-360717a0fe8a" />
-<img width="1000" height="600" alt="newplot (3)" src="https://github.com/user-attachments/assets/7cd8dad2-b3e2-445e-8232-b837650c5383" />
-<img width="1103" height="360" alt="newplot (4)" src="https://github.com/user-attachments/assets/1c369be5-d2c2-401f-9a2d-d3475bdb783a" />
-![Capture](https://github.com/user-attachments/assets/ca9ce8f7-06f8-4176-a1ee-9e95dcc010b0)
+📌 Project Overview
+
+This project focuses on analyzing user reviews of ChatGPT to understand customer sentiment, identify common issues, and extract actionable insights from textual feedback. The objective is to transform unstructured review data into meaningful business insights using Natural Language Processing (NLP) and data visualization techniques.
+
+The dataset consists of user reviews, ratings, and review dates. The analysis includes sentiment classification, keyword extraction, trend analysis, and Net Promoter Score (NPS) calculation.
+
+🎯 Objectives
+
+Analyze overall user sentiment (Positive, Neutral, Negative)
+
+Identify what users appreciate the most
+
+Detect common complaints and recurring problems
+
+Study sentiment trends over time
+
+Calculate Net Promoter Score (NPS) to measure user loyalty
+
+🛠️ Technologies & Libraries Used
+
+Python
+
+Pandas (Data Cleaning & Manipulation)
+
+TextBlob (Sentiment Analysis)
+
+Scikit-learn (CountVectorizer for n-gram extraction)
+
+Plotly (Interactive Data Visualization)
+
+🔎 Project Workflow
+1. Data Preprocessing
+
+Loaded dataset using Pandas
+
+Handled missing values in review text
+
+Converted review dates into datetime format
+
+Prepared dataset for sentiment analysis
+
+2. Sentiment Analysis
+
+Used TextBlob to compute sentiment polarity scores and classified reviews into:
+
+Positive
+
+Neutral
+
+Negative
+
+This provided an overall distribution of customer perception.
+
+3. Positive Review Analysis
+
+Extracted frequent 2-gram and 3-gram phrases
+
+Identified recurring themes such as:
+
+Ease of use
+
+Helpfulness
+
+AI capabilities
+
+Educational support
+
+4. Negative Review Analysis
+
+Extracted common phrases from negative reviews
+
+Identified key issues such as:
+
+Incorrect answers
+
+App performance problems
+
+Feature malfunctions
+
+Response quality concerns
+
+5. Problem Categorization
+
+Grouped negative feedback into broader problem categories:
+
+Incorrect Answers
+
+App Performance
+
+User Interface
+
+Features Not Working
+
+Quality of Responses
+
+This helped highlight major pain points affecting user experience.
+
+6. Sentiment Trend Over Time
+
+Aggregated monthly sentiment counts
+
+Visualized changes in Positive, Neutral, and Negative reviews
+
+Observed growth in positive sentiment during high adoption periods
+
+7. Net Promoter Score (NPS)
+
+Ratings were categorized as:
+
+5 stars → Promoters
+
+4 stars → Passives
+
+≤3 stars → Detractors
+
+Calculated NPS:
+
+NPS = %Promoters − %Detractors
+
+Final NPS Score: 64.35
+
+An NPS above 50 is generally considered excellent, indicating strong customer loyalty.
